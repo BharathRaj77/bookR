@@ -1,0 +1,14 @@
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\App.Tests.deps.json
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\App.Tests.runtimeconfig.json
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\App.Tests.runtimeconfig.dev.json
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\App.Tests.dll
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\bin\Debug\netcoreapp2.2\App.Tests.pdb
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\obj\Debug\netcoreapp2.2\App.Tests.csprojAssemblyReference.cache
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\obj\Debug\netcoreapp2.2\App.Tests.csproj.CoreCompileInputs.cache
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\obj\Debug\netcoreapp2.2\App.Tests.AssemblyInfoInputs.cache
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\obj\Debug\netcoreapp2.2\App.Tests.AssemblyInfo.cs
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\obj\Debug\netcoreapp2.2\App.Tests.dll
+C:\Users\hackathon\source\repos\GeekGroup\App.Tests\obj\Debug\netcoreapp2.2\App.Tests.pdb
