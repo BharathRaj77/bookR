@@ -1,0 +1,9 @@
+$anms-ucborange-primary: mat-palette($mat-orange, 700, 300, 900);
+$anms-ucborange-accent: mat-palette($mat-orange, 300);
+$anms-ucborange-warn: mat-palette($mat-orange, 600);
+
+$anms-ucborange-theme: mat-light-theme(
+  $anms-ucborange-primary,
+  $anms-ucborange-accent,
+  $anms-ucborange-warn
+);

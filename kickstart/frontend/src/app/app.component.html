@@ -1,0 +1,70 @@
+<anms-theme-emitter></anms-theme-emitter>
+<mat-sidenav-container class="all-wrap">
+  <mat-sidenav #sidenav mode="push">
+    <div class="branding"><img [src]="logo" /> <span>Kickstart Template</span></div>
+    <mat-nav-list>
+      <a mat-list-item *ngFor="let item of navigationSideMenu" (click)="sidenav.close()" [routerLink]="[item.link]"
+        routerLinkActive="active">
+        {{item.label}}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <div class="page-wrap">
+    <div class="toolbar">
+      <mat-toolbar color="primary">
+        <button mat-icon-button class="d-md-none" (click)="sidenav.open()">
+          <mat-icon>menu</mat-icon>
+        </button>
+
+        <span routerLink="" class="branding spacer center d-inline d-sm-none">
+          <img [src]="logo" /></span>
+        <span routerLink="" class="branding spacer center d-none d-sm-inline d-md-none"><img [src]="logo" /> Kickstart
+          Template</span>
+        <span routerLink="" class="branding spacer d-none d-md-inline"><img [src]="logo" /> Kickstart Template</span>
+
+        <span class="d-none d-md-inline">
+          <button mat-button class="nav-button" *ngFor="let item of navigation" [routerLink]="[item.link]"
+            routerLinkActive="active">
+            {{item.label}}
+          </button>
+        </span>
+        <mat-menu #toolbarUserMenu="matMenu">
+          <button mat-menu-item (click)="onLogoutClick()">
+            <mat-icon>power_settings_new</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+
+        <button mat-icon-button routerLink="settings" class="d-none d-sm-inline">
+          <mat-icon>settings</mat-icon>
+        </button>
+
+      </mat-toolbar>
+    </div>
+
+    <div class="content" [@routerTransition]="o.isActivated && o.activatedRoute.routeConfig.path">
+      <router-outlet #o="outlet"></router-outlet>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+
+      </div>
+      <div class="row">
+        <div class="col-1 signature">
+          <!-- <a matTooltip="Show Application Health Status" matTooltipPosition="before" (click)="onHealthClick()">
+            <i class="fa fa-heartbeat"></i><span>App Health</span>
+          </a> -->
+        </div>
+        <div class="col-11 signature">
+          &#169; <span class="year">{{year}}</span> - UCB Biopharma SPRL
+          <br class="d-block d-sm-none">
+          <a matTooltip="Show changelog" matTooltipPosition="before" (click)="onChangeLogClick()">
+            <i class="fa fa-rocket"></i> {{version}} <span *ngIf="!isProd">[{{envName}}]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-sidenav-container>

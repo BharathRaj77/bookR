@@ -1,0 +1,92 @@
+@import 'styles-variables';
+
+@import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../node_modules/bootstrap/scss/bootstrap-grid';
+
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+@import 'styles-reset';
+
+@import '../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+@import 'styles-mat-table';
+
+@import 'themes/default-theme.scss';
+@import 'themes/light-theme.scss';
+@import 'themes/black-theme.scss';
+@import 'themes/nature-theme.scss';
+
+@import 'themes/ucbpink-theme.scss';
+@import 'themes/ucbblue-theme.scss';
+@import 'themes/ucborange-theme.scss';
+@import 'themes/ucbpurple-theme.scss';
+@import 'app/shared/theme-emitter/theme-emitter.scss';
+
+@import 'styles-reset.scss-theme';
+@import 'app/app.component.scss-theme';
+@import 'app/shared/big-input/big-input.component.scss-theme';
+@import 'app/static/about/about.component.scss-theme';
+@import 'app/todos/index/index.component.scss-theme';
+@import 'app/todos/list/list.component.scss-theme';
+@import 'app/examples/stock-market/stock-market.component.scss-theme';
+@import 'app/examples/theming/parent/parent.component.scss-theme';
+@import 'app/examples/theming/child/child.component.scss-theme';
+@import 'app/examples/examples/examples.component.scss-theme';
+@import 'app/examples/authenticated/authenticated.component.scss-theme';
+
+@mixin custom-components-theme($theme) {
+  @include theme-emitter($theme);
+
+  @include anms-styles-reset-theme($theme);
+  @include anms-app-component-theme($theme);
+  @include anms-about-component-theme($theme);
+  @include anms-big-input-component-theme($theme);
+  @include anms-todo-component-theme($theme);
+  @include anms-todos-component-theme($theme);
+  @include anms-stock-market-component-theme($theme);
+  @include anms-parent-component-theme($theme);
+  @include anms-child-component-theme($theme);
+  @include anms-examples-component-theme($theme);
+  @include anms-authenticated-theme($theme);
+}
+
+.default-theme {
+  @include angular-material-theme($anms-theme);
+  @include custom-components-theme($anms-theme);
+}
+
+.light-theme {
+  @include angular-material-theme($anms-light-theme);
+  @include custom-components-theme($anms-light-theme);
+}
+
+.black-theme {
+  @include angular-material-theme($anms-black-theme);
+  @include custom-components-theme($anms-black-theme);
+}
+
+.nature-theme {
+  @include angular-material-theme($anms-nature-theme);
+  @include custom-components-theme($anms-nature-theme);
+}
+
+.ucbpink-theme {
+  @include angular-material-theme($anms-ucbpink-theme);
+  @include custom-components-theme($anms-ucbpink-theme);
+}
+
+.ucbblue-theme {
+  @include angular-material-theme($anms-ucbblue-theme);
+  @include custom-components-theme($anms-ucbblue-theme);
+}
+
+.ucborange-theme {
+  @include angular-material-theme($anms-ucborange-theme);
+  @include custom-components-theme($anms-ucborange-theme);
+}
+.ucbpurple-theme {
+  @include angular-material-theme($anms-ucbpurple-theme);
+  @include custom-components-theme($anms-ucbpurple-theme);
+}

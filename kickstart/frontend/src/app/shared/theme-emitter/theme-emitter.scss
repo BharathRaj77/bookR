@@ -1,0 +1,17 @@
+@mixin theme-emitter($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  anms-theme-emitter {
+    .primary {
+      color: mat-color($primary);
+    }
+    .accent {
+      color: mat-color($accent);
+    }
+    .warn {
+      color: mat-color($warn);
+    }
+  }
+}

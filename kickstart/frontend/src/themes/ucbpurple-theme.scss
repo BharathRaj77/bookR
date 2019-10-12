@@ -1,0 +1,9 @@
+$anms-ucbpurple-primary: mat-palette($mat-purple, 700, 300, 900);
+$anms-ucbpurple-accent: mat-palette($mat-purple, 300);
+$anms-ucbpurple-warn: mat-palette($mat-purple, 600);
+
+$anms-ucbpurple-theme: mat-light-theme(
+  $anms-ucbpurple-primary,
+  $anms-ucbpurple-accent,
+  $anms-ucbpurple-warn
+);

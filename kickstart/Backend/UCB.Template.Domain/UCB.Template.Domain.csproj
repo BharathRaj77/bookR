@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ProjectGuid>cb78a82c-01b3-40aa-9303-1cea821d5a5f</ProjectGuid>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LanguageVersion>latest</LanguageVersion>
+    <Version>1.0.0-alpha</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UCB.Sherpa.Data.Abstractions" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>

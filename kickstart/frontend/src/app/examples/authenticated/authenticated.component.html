@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="main-heading">Authenticated component</h1>
+      <p>
+        This component is only accessible for authenticated users
+      </p>
+      <p>
+        Logging out will cause user to be redirected to home screen if visiting route
+        accessible only to authenticated users
+      </p>
+      <p>To guard a route you can use RoleGuard, specify the allowed roles using the data property (roles will be retrieved from API token)</p>
+      <pre>
+      &#123;
+        path: 'editorauthenticated',
+        component: EditorAuthenticatedComponent,
+        canActivate: [RoleGuard],
+        data: &#123;
+          roles: ['editor', 'admin']
+        &#125;
+      &#125;
+      </pre>
+      <p>To guard a route you can also use ClaimGuard, specify the required claims using the data property (claims will be retrieved from API token)</p>
+      <pre>
+      &#123;
+        path: 'authenticated',
+        component: AuthenticatedComponent,
+        canActivate: [ClaimGuard],
+        data: &#123;
+          claims: &#123; roles: ['editor', 'admin']&#125;
+        &#125;
+      &#125;
+      </pre>
+      <p>Roles: </p>
+      <p *ngFor="let role of userRoles">{{role}}</p>
+      <p *ngFor="let result of userCheckResults">{{result}}</p>
+    </div>
+  </div>
+</div>

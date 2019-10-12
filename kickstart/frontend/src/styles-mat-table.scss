@@ -1,0 +1,12 @@
+.align-right {
+  &.mat-cell, &.mat-header-cell {
+    text-align: right;
+  }
+
+  &.mat-header-cell {
+    >.mat-sort-header-container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}

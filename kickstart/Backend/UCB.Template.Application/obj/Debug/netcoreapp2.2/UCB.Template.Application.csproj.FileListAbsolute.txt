@@ -1,0 +1,12 @@
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\bin\Debug\netcoreapp2.2\UCB.Template.Application.deps.json
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\bin\Debug\netcoreapp2.2\UCB.Template.Application.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\bin\Debug\netcoreapp2.2\UCB.Template.Application.pdb
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\bin\Debug\netcoreapp2.2\UCB.Template.Domain.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\bin\Debug\netcoreapp2.2\UCB.Template.Domain.pdb
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\obj\Debug\netcoreapp2.2\UCB.Template.Application.csprojAssemblyReference.cache
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\obj\Debug\netcoreapp2.2\UCB.Template.Application.csproj.CoreCompileInputs.cache
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\obj\Debug\netcoreapp2.2\UCB.Template.Application.AssemblyInfoInputs.cache
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\obj\Debug\netcoreapp2.2\UCB.Template.Application.AssemblyInfo.cs
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\obj\Debug\netcoreapp2.2\UCB.Template.Application.csproj.CopyComplete
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\obj\Debug\netcoreapp2.2\UCB.Template.Application.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application\obj\Debug\netcoreapp2.2\UCB.Template.Application.pdb

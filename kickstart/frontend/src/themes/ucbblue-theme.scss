@@ -1,0 +1,9 @@
+$anms-ucbblue-primary: mat-palette($mat-blue, 700, 300, 900);
+$anms-ucbblue-accent: mat-palette($mat-blue, 300);
+$anms-ucbblue-warn: mat-palette($mat-blue, 600);
+
+$anms-ucbblue-theme: mat-light-theme(
+  $anms-ucbblue-primary,
+  $anms-ucbblue-accent,
+  $anms-ucbblue-warn
+);

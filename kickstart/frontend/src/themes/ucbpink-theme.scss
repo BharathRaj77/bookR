@@ -1,0 +1,9 @@
+$anms-ucbpink-primary: mat-palette($mat-pink, 700, 300, 900);
+$anms-ucbpink-accent: mat-palette($mat-pink, 300);
+$anms-ucbpink-warn: mat-palette($mat-red, 600);
+
+$anms-ucbpink-theme: mat-light-theme(
+  $anms-ucbpink-primary,
+  $anms-ucbpink-accent,
+  $anms-ucbpink-warn
+);

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ProjectGuid>2e607d8a-b736-4525-b198-136096a41563</ProjectGuid>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LanguageVersion>latest</LanguageVersion>
+    <Version>1.0.0-alpha</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UCB.Template.Application\UCB.Template.Application.csproj" />
+    <ProjectReference Include="..\UCB.Template.Data\UCB.Template.Data.csproj" />
+    <ProjectReference Include="..\UCB.Template.Domain\UCB.Template.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

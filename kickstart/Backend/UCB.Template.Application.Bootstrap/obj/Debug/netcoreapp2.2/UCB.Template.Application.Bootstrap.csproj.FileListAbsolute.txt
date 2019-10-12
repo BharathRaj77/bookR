@@ -1,0 +1,16 @@
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.deps.json
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.pdb
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Application.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Data.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Domain.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Application.pdb
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Data.pdb
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\bin\Debug\netcoreapp2.2\UCB.Template.Domain.pdb
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\obj\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.csprojAssemblyReference.cache
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\obj\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.csproj.CoreCompileInputs.cache
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\obj\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.AssemblyInfoInputs.cache
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\obj\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.AssemblyInfo.cs
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\obj\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.csproj.CopyComplete
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\obj\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.dll
+C:\src\sandbox\bookR-Hackathon\kickstart\Backend\UCB.Template.Application.Bootstrap\obj\Debug\netcoreapp2.2\UCB.Template.Application.Bootstrap.pdb

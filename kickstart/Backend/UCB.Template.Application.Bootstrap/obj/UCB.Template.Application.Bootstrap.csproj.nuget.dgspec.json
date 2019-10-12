@@ -1,0 +1,262 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application.Bootstrap\\UCB.Template.Application.Bootstrap.csproj": {}
+  },
+  "projects": {
+    "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application.Bootstrap\\UCB.Template.Application.Bootstrap.csproj": {
+      "version": "1.0.0-alpha",
+      "restore": {
+        "projectUniqueName": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application.Bootstrap\\UCB.Template.Application.Bootstrap.csproj",
+        "projectName": "UCB.Template.Application.Bootstrap",
+        "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application.Bootstrap\\UCB.Template.Application.Bootstrap.csproj",
+        "packagesPath": "C:\\Users\\U059108.UCB-CORP\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application.Bootstrap\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\U059108.UCB-CORP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucbalm.pkgs.visualstudio.com/_packaging/UCB.Packages-Private/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj": {
+                "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj"
+              },
+              "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Data\\UCB.Template.Data.csproj": {
+                "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Data\\UCB.Template.Data.csproj"
+              },
+              "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj": {
+                "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj": {
+      "version": "1.0.0-alpha",
+      "restore": {
+        "projectUniqueName": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj",
+        "projectName": "UCB.Template.Application",
+        "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj",
+        "packagesPath": "C:\\Users\\U059108.UCB-CORP\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\U059108.UCB-CORP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucbalm.pkgs.visualstudio.com/_packaging/UCB.Packages-Private/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj": {
+                "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Data\\UCB.Template.Data.csproj": {
+      "version": "1.0.0-alpha",
+      "restore": {
+        "projectUniqueName": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Data\\UCB.Template.Data.csproj",
+        "projectName": "UCB.Template.Data",
+        "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Data\\UCB.Template.Data.csproj",
+        "packagesPath": "C:\\Users\\U059108.UCB-CORP\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\U059108.UCB-CORP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucbalm.pkgs.visualstudio.com/_packaging/UCB.Packages-Private/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj": {
+                "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "UCB.Sherpa.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj": {
+      "version": "1.0.0-alpha",
+      "restore": {
+        "projectUniqueName": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj",
+        "projectName": "UCB.Template.Domain",
+        "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj",
+        "packagesPath": "C:\\Users\\U059108.UCB-CORP\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\U059108.UCB-CORP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ucbalm.pkgs.visualstudio.com/_packaging/UCB.Packages-Private/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "UCB.Sherpa.Data.Abstractions": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

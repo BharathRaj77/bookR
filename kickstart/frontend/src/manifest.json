@@ -1,0 +1,10 @@
+{
+  "short_name": "Kickstart",
+  "name": "UCB Kickstart Template",
+  "start_url": "/about",
+  "background_color": "#FAFAFA",
+  "display": "fullscreen",
+  "orientation": "any",
+  "scope": "/",
+  "theme_color": "#283593"
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UCB.Template.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:UCB.Template.WebApi.ApiException">
+            <summary>
+            Generic API exception class, used to throw when an application exception occurs at controller level
+            </summary>
+        </member>
+        <member name="M:UCB.Template.WebApi.ApiVersion.ApiVersionController.GetVersion">
+            <summary>
+            Returns the current version of this Web API
+            </summary>
+        </member>
+        <member name="T:UCB.Template.WebApi.Paging.Page`1">
+            <summary>
+            Represents a page of data in the API.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <remarks>
+            This type is almost similar to the Domain Page, but is used to map results
+            from the domain types to the API types.
+            </remarks>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.Page`1.Items">
+            <summary>
+            Returns the items
+            </summary>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.Page`1.Index">
+            <summary>
+            Returns the page index
+            </summary>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.Page`1.Size">
+            <summary>
+            Returns the page size
+            </summary>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.Page`1.TotalPages">
+            <summary>
+            Returns the number of available pages
+            </summary>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.Page`1.TotalItems">
+            <summary>
+            Returns the total number of items across all pages
+            </summary>
+        </member>
+        <member name="T:UCB.Template.WebApi.Paging.PageData">
+            <summary>
+            Contains the requested page and page size.
+            </summary>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.PageData.Page">
+            <summary>
+            Gets or sets the page.
+            </summary>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.PageData.PageSize">
+            <summary>
+            Gets or sets the page size.
+            </summary>
+            <remarks>When setting a new page size, the page size is rounded up to the next valid page size.</remarks>
+            <seealso cref="P:UCB.Template.WebApi.Paging.PageData.ValidPageSizes"/>
+        </member>
+        <member name="P:UCB.Template.WebApi.Paging.PageData.ValidPageSizes">
+            <summary>
+            Returns the valid page sizes in an ascending order.
+            </summary>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.Models.TodoItem.GetSortExpression(System.String)">
+            <summary>
+            Converts the simplified sort expression into a <see cref="T:UCB.Template.Domain.Sort`1" />.
+            </summary>
+            <remarks>
+            Using this strategy, you can easily convert a sort expression into the correct path of the queried entity or DTO.
+            </remarks>
+        </member>
+        <member name="T:UCB.Template.WebApi.TodoItems.TodoItemsController">
+            <summary>
+            API controller for the todoitems resource
+            </summary>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.TodoItemsController.#ctor(AutoMapper.IMapper,UCB.Template.Domain.Services.ITodoItemService,Microsoft.Extensions.Logging.ILogger{UCB.Template.WebApi.TodoItems.TodoItemsController})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="mapper"><see cref="T:AutoMapper.IMapper"/> used to map domain entities to API models and vice-versa.</param>
+            <param name="service"><see cref="T:UCB.Template.Domain.Services.ITodoItemService"/> to manage todoitems.</param>
+            <param name="logger"><see cref="T:Microsoft.Extensions.Logging.ILogger`1"/>.</param>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.TodoItemsController.GetTodoItems(UCB.Template.WebApi.TodoItems.Models.Filter,System.String,UCB.Template.WebApi.Paging.PageData)">
+             <summary>
+             Retrieves all todoitems.
+             </summary>
+             <param name="filter">Optional. Used to filter the todoitems on title, description or being completed.</param>
+             <param name="sort">Optional. Used to sort the todoitems.</param>
+             <param name="pageData">Optional. Used to request a specific page and page size.</param>
+             <remarks>
+             To sort, specify a valid field name (id, title, description or isCompleted) and
+             prefix it with a plus (+) to sort ascending or minus (-) to sort descending.
+            
+             If you don't prefix the sort field, then ascending order is assumed.
+             </remarks>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.TodoItemsController.GetTodoItem(System.Guid)">
+            <summary>
+            Retrieves a single todoitem, identified by <paramref name="id"/>.
+            </summary>
+            <param name="id">The identifier of a todoitem.</param>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.TodoItemsController.CreateTodoItem(UCB.Template.WebApi.TodoItems.Models.TodoItemToCreate)">
+            <summary>
+            Creates a new todoitem.
+            </summary>
+            <param name="model">A <see cref="T:UCB.Template.WebApi.TodoItems.Models.TodoItemToCreate"/>, containing information about the new todoitem.</param>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.TodoItemsController.ReplaceTodoItem(System.Guid,UCB.Template.WebApi.TodoItems.Models.TodoItemToUpdate)">
+            <summary>
+            Fully updates (or replaces) a todoitem identified by <paramref name="id"/>.
+            </summary>
+            <param name="id">The identifier of an existing todoitem.</param>
+            <param name="model">A <see cref="T:UCB.Template.WebApi.TodoItems.Models.TodoItemToUpdate"/> containing updated information.</param>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.TodoItemsController.RemoveTodoItem(System.Guid)">
+            <summary>
+            Removes the todoitem identified by <paramref name="id"/>.
+            </summary>
+            <param name="id">The identifier of the todoitem.</param>
+        </member>
+        <member name="M:UCB.Template.WebApi.TodoItems.TodoItemsController.PartiallyUpdateTodoItem(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{UCB.Template.WebApi.TodoItems.Models.TodoItemToUpdate})">
+            <summary>
+            Partially updates a todoitem identified by <paramref name="id"/>.
+            </summary>
+            <param name="id">The identifier of the todoitem.</param>
+            <param name="patchDoc">A <see cref="T:Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1"/> for <see cref="T:UCB.Template.WebApi.TodoItems.Models.TodoItemToUpdate"/>, containing patch operations to perform on the todoitem.</param>
+        </member>
+    </members>
+</doc>

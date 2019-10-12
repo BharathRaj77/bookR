@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="main-heading">{{'i18n.title' | translate}}</h1>
+      <p [translate]="'i18n.firstPara'">This text should not remain visible</p>
+      <p translate>i18n.secondPara</p>
+      <p>Change language to:</p>
+      <ul>
+        <li><a [routerLink]="" (click)="changeLanguage('en')">English</a></li>
+        <li><a [routerLink]="" (click)="changeLanguage('nl')">Nederlands</a></li>
+        <li><a [routerLink]="" (click)="changeLanguage('ja')">日本語</a></li>
+      </ul>
+    </div>
+    <mat-card class="col-12">
+      <mat-card-title>Sample code</mat-card-title>
+      <mat-card-content>
+        <p>
+          You can use a filter to translate text or values:<br />
+          <code>&lt;h1&gt;{{ 'demo.title' | translate }}&lt;/h1&gt;</code><br />
+          <br />
+          Or use directives instead:<br />
+          <code>&lt;span [translate]="'demo.text'"&gt;Directive using an attribute as translation key&lt;/span&gt;</code><br />
+          <br />
+          This element uses its contents as translation key:<br />
+          <code>&lt;span translate&gt;demo.text&lt;/span&gt;</code>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

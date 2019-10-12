@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ProjectGuid>6f88e78e-e62d-47a3-a11a-4e0bdb4104ca</ProjectGuid>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LanguageVersion>latest</LanguageVersion>
+    <Version>1.0.0-alpha</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UCB.Template.Domain\UCB.Template.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

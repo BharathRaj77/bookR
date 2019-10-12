@@ -1,0 +1,17 @@
+{
+    "tenant": "__AZURE-TENANT__",
+    "clientId": "__CLIENT-CLIENTID__",
+    "endpoints": {
+        "graph": {
+            "url": "https://graph.microsoft.com",
+            "resourceId": "https://graph.microsoft.com"
+        },
+        "api": {
+            "url": "__API-URL__",
+            "resourceId": "__API-RESOURCE-ID__"
+        }
+    },
+    "cacheLocation": "localStorage",
+    "apiUrl": "__API-URL__",
+    "instrumentationKey": "__CLIENT-AIINSTRUMENTATIONKEY__"
+}

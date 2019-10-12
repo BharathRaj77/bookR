@@ -1,0 +1,99 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Todo Data Grid</h2>
+    </div>
+    <div class="col-md-8">
+      <mat-card fxLayout="column">
+        <mat-toolbar>
+          <button mat-button (click)="edit()" [disabled]="selection.selected.length !== 1">
+            <mat-icon>edit</mat-icon>
+            EDIT
+          </button>
+          <button mat-button (click)="removeSelected()" [disabled]="selection.selected.length === 0">
+            <mat-icon>delete</mat-icon>
+            REMOVE
+          </button>
+          <span class="fill"></span>
+          <mat-button-toggle #filterToggle aria-label="Filter">
+            <mat-icon>filter_list</mat-icon>
+          </mat-button-toggle>
+        </mat-toolbar>
+        <mat-card *ngIf="filterToggle.checked">
+          <mat-card-content class="filter">
+            <mat-form-field>
+              <input matInput placeholder="Title" [(ngModel)]="filter.title">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Description" [(ngModel)]="filter.description">
+            </mat-form-field>
+            <mat-checkbox (change)="$event ? toggleIsCompleted() : null" [ngModel]="filter.isCompleted" [indeterminate]="filter.isCompleted === null">Done?</mat-checkbox>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="applyFilter()">FILTER</button>
+            <button mat-button (click)="resetFilter()">CLEAR</button>
+          </mat-card-actions>
+        </mat-card>
+        <div class="spinner-container" *ngIf="todoDataSource.loading$ | async">
+          <mat-spinner></mat-spinner>
+        </div>
+        <mat-table [dataSource]="todoDataSource" matSort>
+          <ng-container matColumnDef="select">
+            <mat-header-cell *matHeaderCellDef fxFlex="10%">
+              <mat-checkbox (change)="$event ? masterToggle() : null"
+                            [checked]="selection.hasValue() && isAllSelected()"
+                            [indeterminate]="selection.hasValue() && !isAllSelected()">
+              </mat-checkbox>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row" fxFlex="10%">
+                <mat-checkbox (click)="$event.stopPropagation()"
+                              (change)="$event ? selection.toggle(row) : null"
+                              [checked]="selection.isSelected(row)">
+                </mat-checkbox>
+              </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="title">
+            <mat-header-cell *matHeaderCellDef fxFlex="30%" mat-sort-header>Title</mat-header-cell>
+            <mat-cell *matCellDef="let item" fxFlex="30%">{{item.title}}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="description">
+            <mat-header-cell *matHeaderCellDef fxFlex="50%" mat-sort-header>Description</mat-header-cell>
+            <mat-cell mat-cell *matCellDef="let item" fxFlex="50%">{{item.description}}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="isCompleted">
+            <mat-header-cell *matHeaderCellDef class="align-right" fxFlex="10%" mat-sort-header>Done?</mat-header-cell>
+            <mat-cell mat-cell *matCellDef="let item" class="align-right" fxFlex="10%">
+              <mat-icon *ngIf="item.isCompleted">done</mat-icon>
+            </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayColumns; sticky: true"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayColumns" [ngClass]="{'completed': row.isCompleted}"></mat-row>
+        </mat-table>
+        <mat-paginator [pageSizeOptions]="validPageSizes" [pageSize]="10"></mat-paginator>
+      </mat-card>
+    </div>
+    <div class="col-md-4 todo-form">
+      <mat-card>
+        <mat-card-title>Add new Todo Item</mat-card-title>
+        <mat-card-content>
+          <form novalidate [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+              <mat-label>Title</mat-label>
+              <input matInput formControlName="title" placeholder="Hmm, what should I do next?" required />
+              <mat-error>You must at least enter a title.</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Description</mat-label>
+              <textarea matInput formControlName="description" placeholder="You can add more details here if you like"></textarea>
+            </mat-form-field>
+          </form>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-flat-button color="primary" type="button" (click)="onSubmit()" [disabled]="todoForm.pristine || todoForm.invalid">SAVE</button>
+          <button mat-flat-button color="warn" type="button" (click)="resetForm()" [disabled]="todoForm.pristine">CANCEL</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

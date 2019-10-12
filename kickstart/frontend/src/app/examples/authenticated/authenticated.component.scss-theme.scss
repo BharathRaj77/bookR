@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+@mixin anms-authenticated-theme($theme) {
+  $accent: map-get($theme, accent);
+
+  anms-authenticated {
+    pre {
+      color: mat-color($accent, lighter-contrast);
+      background-color: mat-color($accent, lighter);
+      border-radius: 10px;
+      padding: 0 8px 1px 8px;
+    }
+  }
+}
