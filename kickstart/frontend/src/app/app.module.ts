@@ -11,9 +11,12 @@ import { StaticModule } from './static';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonitoringErrorHandler } from './core';
+import { BookrModule } from './bookr/bookr.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
+    FormsModule,
     // angular
     BrowserAnimationsModule,
     BrowserModule,
@@ -27,7 +30,9 @@ import { MonitoringErrorHandler } from './core';
     SettingsModule,
 
     // app
-    AppRoutingModule
+    AppRoutingModule,
+
+    BookrModule
   ],
   providers: [{ provide: ErrorHandler, useClass: MonitoringErrorHandler }],
   declarations: [AppComponent],

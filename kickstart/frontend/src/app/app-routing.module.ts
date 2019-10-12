@@ -5,7 +5,7 @@ import { SettingsComponent } from './settings';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'about',
+    redirectTo: 'bookr',
     pathMatch: 'full'
   },
   {
@@ -24,8 +24,8 @@ const routes: Routes = [
     loadChildren: () => import('app/todos/todos.module').then(m => m.TodosModule)
   },
   {
-    path: '**',
-    redirectTo: 'about'
+    path: 'bookr',
+    loadChildren: () => import('app/bookr/bookr.module').then(m => m.BookrModule)
   }
 ];
 
