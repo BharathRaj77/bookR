@@ -208,15 +208,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "UCB.Sherpa.Data.Abstractions/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/UCB.Sherpa.Data.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/UCB.Sherpa.Data.Abstractions.dll": {}
-        }
-      },
       "UCB.Template.Domain/1.0.0-alpha": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -702,17 +693,6 @@
         "netstandard.library.nuspec"
       ]
     },
-    "UCB.Sherpa.Data.Abstractions/2.0.0": {
-      "sha512": "De7+u0HU98atGVjAC2t0WCpPZU2INJuYFrkQkwegeiBL7nOBKOSf1QhC0CLpz3fExmmkVSL+LvKDdfy4g7LAhQ==",
-      "type": "package",
-      "path": "ucb.sherpa.data.abstractions/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/netstandard2.0/UCB.Sherpa.Data.Abstractions.dll",
-        "ucb.sherpa.data.abstractions.2.0.0.nupkg.sha512",
-        "ucb.sherpa.data.abstractions.nuspec"
-      ]
-    },
     "UCB.Template.Domain/1.0.0-alpha": {
       "type": "project",
       "path": "../UCB.Template.Domain/UCB.Template.Domain.csproj",
@@ -726,41 +706,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\U059108.UCB-CORP\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\hackathon\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0-alpha",
     "restore": {
-      "projectUniqueName": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj",
+      "projectUniqueName": "C:\\Users\\hackathon\\Downloads\\bookR\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj",
       "projectName": "UCB.Template.Application",
-      "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj",
-      "packagesPath": "C:\\Users\\U059108.UCB-CORP\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Application\\obj\\",
+      "projectPath": "C:\\Users\\hackathon\\Downloads\\bookR\\kickstart\\Backend\\UCB.Template.Application\\UCB.Template.Application.csproj",
+      "packagesPath": "C:\\Users\\hackathon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hackathon\\Downloads\\bookR\\kickstart\\Backend\\UCB.Template.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\U059108.UCB-CORP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\hackathon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://ucbalm.pkgs.visualstudio.com/_packaging/UCB.Packages-Private/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj": {
-              "projectPath": "C:\\src\\sandbox\\bookR-Hackathon\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj"
+            "C:\\Users\\hackathon\\Downloads\\bookR\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj": {
+              "projectPath": "C:\\Users\\hackathon\\Downloads\\bookR\\kickstart\\Backend\\UCB.Template.Domain\\UCB.Template.Domain.csproj"
             }
           }
         }
@@ -788,5 +764,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package UCB.Sherpa.Data.Abstractions. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org",
+      "libraryId": "UCB.Sherpa.Data.Abstractions",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }
